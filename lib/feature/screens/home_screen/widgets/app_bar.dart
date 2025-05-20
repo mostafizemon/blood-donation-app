@@ -3,7 +3,7 @@ import '../../../../theme/app_colors.dart';
 
 SliverAppBar buildSliverAppBar() {
   return SliverAppBar(
-    pinned: true,
+    pinned: false,
     expandedHeight: 170,
     floating: false,
     leading: const SizedBox(),

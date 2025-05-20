@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'action_card.dart';
 
 Widget buildQuickActionsSection(BuildContext context, bool isSmallScreen) {
@@ -24,7 +25,9 @@ Widget buildQuickActionsSection(BuildContext context, bool isSmallScreen) {
             title: "Find Donors",
             icon: Icons.search,
             color: Colors.blue,
-            onTap: () {},
+            onTap: () {
+              Get.toNamed("find_donors_screen");
+            },
           ),
           buildActionCard(
             context: context,
